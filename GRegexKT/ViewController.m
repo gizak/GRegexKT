@@ -13,15 +13,19 @@
 @end
 
 @implementation ViewController
+@synthesize OTRegexIN;
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"view Load");
 }
 
 - (void)viewDidUnload
 {
+    [self setOTRegexIN:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
