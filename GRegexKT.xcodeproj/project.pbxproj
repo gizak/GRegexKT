@@ -22,6 +22,7 @@
 		C335C15A15DEB4B1007526C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C335C13815DEB4B1007526C7 /* Foundation.framework */; };
 		C335C16215DEB4B1007526C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C335C16015DEB4B1007526C7 /* InfoPlist.strings */; };
 		C335C16515DEB4B1007526C7 /* GRegexKTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C335C16415DEB4B1007526C7 /* GRegexKTTests.m */; };
+		C3F8290515E29CDD0055B281 /* RegexProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3F8290315E29CDD0055B281 /* RegexProcessor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		C335C16115DEB4B1007526C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C335C16315DEB4B1007526C7 /* GRegexKTTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GRegexKTTests.h; sourceTree = "<group>"; };
 		C335C16415DEB4B1007526C7 /* GRegexKTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRegexKTTests.m; sourceTree = "<group>"; };
+		C3F8290315E29CDD0055B281 /* RegexProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RegexProcessor.cpp; sourceTree = "<group>"; };
+		C3F8290415E29CDD0055B281 /* RegexProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexProcessor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				C335C14F15DEB4B1007526C7 /* ViewController.m */,
 				C335C13D15DEB4B1007526C7 /* Supporting Files */,
 				C30955AC15E2560500FB9074 /* DataSource.plist */,
+				C3F8290315E29CDD0055B281 /* RegexProcessor.cpp */,
+				C3F8290415E29CDD0055B281 /* RegexProcessor.h */,
 			);
 			path = GRegexKT;
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 				C335C14315DEB4B1007526C7 /* main.m in Sources */,
 				C335C14715DEB4B1007526C7 /* AppDelegate.m in Sources */,
 				C335C15015DEB4B1007526C7 /* ViewController.m in Sources */,
+				C3F8290515E29CDD0055B281 /* RegexProcessor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
