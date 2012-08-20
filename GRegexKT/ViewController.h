@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UISearchBarDelegate>
+
 @property (weak, nonatomic) IBOutlet UISearchBar *OTRegexIN;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *OTSwitchSrc;
+@property (weak, nonatomic) IBOutlet UIPickerView *OTStoreSrc;
+@property (copy, nonatomic) NSString *userInput;
+
+- (IBAction)doSwitch:(id)sender;
 
 @end
