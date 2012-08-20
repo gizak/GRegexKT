@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C30955AD15E2560500FB9074 /* DataSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = C30955AC15E2560500FB9074 /* DataSource.plist */; };
 		C335C13715DEB4B1007526C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C335C13615DEB4B1007526C7 /* UIKit.framework */; };
 		C335C13915DEB4B1007526C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C335C13815DEB4B1007526C7 /* Foundation.framework */; };
 		C335C13B15DEB4B1007526C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C335C13A15DEB4B1007526C7 /* CoreGraphics.framework */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C30955AC15E2560500FB9074 /* DataSource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DataSource.plist; sourceTree = "<group>"; };
 		C335C13215DEB4B1007526C7 /* GRegexKT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GRegexKT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C335C13615DEB4B1007526C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C335C13815DEB4B1007526C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -120,6 +122,7 @@
 				C335C14E15DEB4B1007526C7 /* ViewController.h */,
 				C335C14F15DEB4B1007526C7 /* ViewController.m */,
 				C335C13D15DEB4B1007526C7 /* Supporting Files */,
+				C30955AC15E2560500FB9074 /* DataSource.plist */,
 			);
 			path = GRegexKT;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				C335C14115DEB4B1007526C7 /* InfoPlist.strings in Resources */,
 				C335C14A15DEB4B1007526C7 /* MainStoryboard_iPhone.storyboard in Resources */,
 				C335C14D15DEB4B1007526C7 /* MainStoryboard_iPad.storyboard in Resources */,
+				C30955AD15E2560500FB9074 /* DataSource.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +452,7 @@
 				C335C16A15DEB4B1007526C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C335C16B15DEB4B1007526C7 /* Build configuration list for PBXNativeTarget "GRegexKTTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +461,7 @@
 				C335C16D15DEB4B1007526C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
