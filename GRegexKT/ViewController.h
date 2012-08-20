@@ -8,13 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UISearchBarDelegate>
+@interface ViewController : UIViewController<UISearchBarDelegate,UIPickerViewDelegate,UIPickerViewDataSource>
 
-@property (weak, nonatomic) IBOutlet UISearchBar *OTRegexIN;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *OTSwitchSrc;
-@property (weak, nonatomic) IBOutlet UIPickerView *OTStoreSrc;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *barButton;
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 @property (copy, nonatomic) NSString *userInput;
 
-- (IBAction)doSwitch:(id)sender;
+@property (strong,nonatomic) NSArray *pickerContent;
+- (IBAction)doSwitchFile:(id)sender;
 
 @end

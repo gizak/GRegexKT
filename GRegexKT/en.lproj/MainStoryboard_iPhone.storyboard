@@ -28,11 +28,16 @@
                                 <items>
                                     <barButtonItem systemItem="organize" id="NZ2-5z-ncg">
                                         <connections>
-                                            <action selector="doSwitch:" destination="2" id="V9b-OU-MpT"/>
+                                            <action selector="doSwitchFile:" destination="2" id="RHv-vc-jfg"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <webView contentMode="scaleToFill" id="ghr-HM-1UF">
+                                <rect key="frame" x="0.0" y="44" width="320" height="372"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
                             <pickerView hidden="YES" contentMode="scaleToFill" id="UZg-zB-2df">
                                 <rect key="frame" x="0.0" y="200" width="320" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -40,6 +45,10 @@
                                     <accessibilityTraits key="traits" none="YES" staticText="YES"/>
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
+                                <connections>
+                                    <outlet property="dataSource" destination="2" id="SUI-SS-MDS"/>
+                                    <outlet property="delegate" destination="2" id="sgO-QR-2Yg"/>
+                                </connections>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -47,9 +56,9 @@
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="OTRegexIN" destination="kCU-3a-9uV" id="AhK-G8-vlh"/>
-                        <outlet property="OTStoreSrc" destination="UZg-zB-2df" id="Wgu-13-cKD"/>
-                        <outlet property="OTSwitchSrc" destination="NZ2-5z-ncg" id="U59-5X-S5V"/>
+                        <outlet property="barButton" destination="NZ2-5z-ncg" id="tZT-Q1-pZO"/>
+                        <outlet property="pickerView" destination="UZg-zB-2df" id="RA7-Xg-aM9"/>
+                        <outlet property="searchBar" destination="kCU-3a-9uV" id="IRd-Jh-Y1Q"/>
                     </connections>
                 </viewController>
             </objects>
@@ -59,10 +68,10 @@
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
-                <relationship kind="action" name="doSwitch:"/>
-                <relationship kind="outlet" name="OTRegexIN" candidateClass="UISearchBar"/>
-                <relationship kind="outlet" name="OTStoreSrc" candidateClass="UIPickerView"/>
-                <relationship kind="outlet" name="OTSwitchSrc" candidateClass="UIBarButtonItem"/>
+                <relationship kind="action" name="doSwitchFile:"/>
+                <relationship kind="outlet" name="barButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="pickerView" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
             </relationships>
         </class>
     </classes>
