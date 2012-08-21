@@ -10,5 +10,18 @@
 #define __GRegexKT__RegexProcessor__
 
 #include <iostream>
+#include <c++/v1/regex>
+
+class RegexProcessor {
+private:
+    std::string stream;
+    std::regex pattern;
+    
+protected:
+    static char* syntaxLib;
+public:
+    void load();
+};
 
 #endif /* defined(__GRegexKT__RegexProcessor__) */
+
