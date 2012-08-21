@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UISearchBarDelegate,UIPickerViewDelegate,UIPickerViewDataSource>
+@interface ViewController : UIViewController<UISearchBarDelegate,UIPickerViewDelegate,UIPickerViewDataSource,UIWebViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *barButton;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (copy, nonatomic) NSString *userInput;
 
 @property (strong,nonatomic) NSArray *pickerContent;

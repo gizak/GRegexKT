@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#include "RegexProcessor.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,7 @@
 @synthesize searchBar;
 @synthesize barButton;
 @synthesize pickerView;
+@synthesize webView;
 
 
 - (void)viewDidLoad
@@ -25,6 +27,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     NSLog(@"load ViewController");
     self.pickerContent=[[NSArray alloc] initWithObjects:@"default",@"In0",@"In1",@"In2",nil];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"localhost/"]]];
+
 }
 
 - (void)viewDidUnload
@@ -32,6 +36,7 @@
     [self setSearchBar:nil];
     [self setPickerView:nil];
     [self setBarButton:nil];
+    [self setWebView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -61,6 +66,11 @@
 - (void)searchBarSearchButtonClicked:(UISearchBar *)srchBar{
     NSLog(@"call searchBarSearchButtonClicked");
     [srchBar endEditing:YES];
+    RegexProcessor rp("");
+    rp.getHtmlStream();
+    NSString *str=[NSString stringWithUTF8String:rp.getHtmlStream().c_str()];
+    NSLog(str);
+    [self.webView loadHTMLString:str baseURL:nil];
 }
 
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
@@ -77,4 +87,14 @@
     NSLog(@"call titleForRow -> \"%@\"",[self.pickerContent objectAtIndex:row]);
     return [self.pickerContent objectAtIndex:row];
 }
+
+-(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
+    NSLog(@"call shouldStartLoadWithRequest ->%@",request);
+    return YES;
+}
+
+-(void)webViewDidStartLoad:(UIWebView *)webView{
+    NSLog(@"call webViewDidStartLoad ->%@",webView);
+}
+
 @end

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C30955AD15E2560500FB9074 /* DataSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = C30955AC15E2560500FB9074 /* DataSource.plist */; };
 		C335C13715DEB4B1007526C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C335C13615DEB4B1007526C7 /* UIKit.framework */; };
 		C335C13915DEB4B1007526C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C335C13815DEB4B1007526C7 /* Foundation.framework */; };
 		C335C13B15DEB4B1007526C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C335C13A15DEB4B1007526C7 /* CoreGraphics.framework */; };
@@ -16,13 +15,34 @@
 		C335C14715DEB4B1007526C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C335C14615DEB4B1007526C7 /* AppDelegate.m */; };
 		C335C14A15DEB4B1007526C7 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C335C14815DEB4B1007526C7 /* MainStoryboard_iPhone.storyboard */; };
 		C335C14D15DEB4B1007526C7 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C335C14B15DEB4B1007526C7 /* MainStoryboard_iPad.storyboard */; };
-		C335C15015DEB4B1007526C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C335C14F15DEB4B1007526C7 /* ViewController.m */; };
+		C335C15015DEB4B1007526C7 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C335C14F15DEB4B1007526C7 /* ViewController.mm */; };
 		C335C15815DEB4B1007526C7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C335C15715DEB4B1007526C7 /* SenTestingKit.framework */; };
 		C335C15915DEB4B1007526C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C335C13615DEB4B1007526C7 /* UIKit.framework */; };
 		C335C15A15DEB4B1007526C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C335C13815DEB4B1007526C7 /* Foundation.framework */; };
 		C335C16215DEB4B1007526C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C335C16015DEB4B1007526C7 /* InfoPlist.strings */; };
 		C335C16515DEB4B1007526C7 /* GRegexKTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C335C16415DEB4B1007526C7 /* GRegexKTTests.m */; };
 		C3F8290515E29CDD0055B281 /* RegexProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3F8290315E29CDD0055B281 /* RegexProcessor.cpp */; };
+		C3FD934A15E431C900954354 /* lang-apollo.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933515E431C900954354 /* lang-apollo.js */; };
+		C3FD934B15E431C900954354 /* lang-clj.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933615E431C900954354 /* lang-clj.js */; };
+		C3FD934C15E431C900954354 /* lang-css.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933715E431C900954354 /* lang-css.js */; };
+		C3FD934D15E431C900954354 /* lang-go.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933815E431C900954354 /* lang-go.js */; };
+		C3FD934E15E431C900954354 /* lang-hs.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933915E431C900954354 /* lang-hs.js */; };
+		C3FD934F15E431C900954354 /* lang-lisp.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933A15E431C900954354 /* lang-lisp.js */; };
+		C3FD935015E431C900954354 /* lang-lua.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933B15E431C900954354 /* lang-lua.js */; };
+		C3FD935115E431C900954354 /* lang-ml.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933C15E431C900954354 /* lang-ml.js */; };
+		C3FD935215E431C900954354 /* lang-n.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933D15E431C900954354 /* lang-n.js */; };
+		C3FD935315E431C900954354 /* lang-proto.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933E15E431C900954354 /* lang-proto.js */; };
+		C3FD935415E431C900954354 /* lang-scala.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933F15E431C900954354 /* lang-scala.js */; };
+		C3FD935515E431C900954354 /* lang-sql.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD934015E431C900954354 /* lang-sql.js */; };
+		C3FD935615E431C900954354 /* lang-tex.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD934115E431C900954354 /* lang-tex.js */; };
+		C3FD935715E431C900954354 /* lang-vb.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD934215E431C900954354 /* lang-vb.js */; };
+		C3FD935815E431C900954354 /* lang-vhdl.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD934315E431C900954354 /* lang-vhdl.js */; };
+		C3FD935915E431C900954354 /* lang-wiki.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD934415E431C900954354 /* lang-wiki.js */; };
+		C3FD935A15E431C900954354 /* lang-xq.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD934515E431C900954354 /* lang-xq.js */; };
+		C3FD935B15E431C900954354 /* lang-yaml.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD934615E431C900954354 /* lang-yaml.js */; };
+		C3FD935D15E431C900954354 /* prettify.css in Resources */ = {isa = PBXBuildFile; fileRef = C3FD934815E431C900954354 /* prettify.css */; };
+		C3FD935E15E431C900954354 /* prettify.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD934915E431C900954354 /* prettify.js */; };
+		C3FD936015E431F900954354 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = C3FD935F15E431F900954354 /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +56,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C30955AC15E2560500FB9074 /* DataSource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DataSource.plist; sourceTree = "<group>"; };
 		C335C13215DEB4B1007526C7 /* GRegexKT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GRegexKT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C335C13615DEB4B1007526C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C335C13815DEB4B1007526C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,7 +69,7 @@
 		C335C14915DEB4B1007526C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		C335C14C15DEB4B1007526C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		C335C14E15DEB4B1007526C7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C335C14F15DEB4B1007526C7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C335C14F15DEB4B1007526C7 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		C335C15615DEB4B1007526C7 /* GRegexKTTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GRegexKTTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C335C15715DEB4B1007526C7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		C335C15F15DEB4B1007526C7 /* GRegexKTTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GRegexKTTests-Info.plist"; sourceTree = "<group>"; };
@@ -59,6 +78,27 @@
 		C335C16415DEB4B1007526C7 /* GRegexKTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRegexKTTests.m; sourceTree = "<group>"; };
 		C3F8290315E29CDD0055B281 /* RegexProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RegexProcessor.cpp; sourceTree = "<group>"; };
 		C3F8290415E29CDD0055B281 /* RegexProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexProcessor.h; sourceTree = "<group>"; };
+		C3FD933515E431C900954354 /* lang-apollo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-apollo.js"; sourceTree = "<group>"; };
+		C3FD933615E431C900954354 /* lang-clj.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-clj.js"; sourceTree = "<group>"; };
+		C3FD933715E431C900954354 /* lang-css.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-css.js"; sourceTree = "<group>"; };
+		C3FD933815E431C900954354 /* lang-go.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-go.js"; sourceTree = "<group>"; };
+		C3FD933915E431C900954354 /* lang-hs.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-hs.js"; sourceTree = "<group>"; };
+		C3FD933A15E431C900954354 /* lang-lisp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-lisp.js"; sourceTree = "<group>"; };
+		C3FD933B15E431C900954354 /* lang-lua.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-lua.js"; sourceTree = "<group>"; };
+		C3FD933C15E431C900954354 /* lang-ml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-ml.js"; sourceTree = "<group>"; };
+		C3FD933D15E431C900954354 /* lang-n.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-n.js"; sourceTree = "<group>"; };
+		C3FD933E15E431C900954354 /* lang-proto.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-proto.js"; sourceTree = "<group>"; };
+		C3FD933F15E431C900954354 /* lang-scala.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-scala.js"; sourceTree = "<group>"; };
+		C3FD934015E431C900954354 /* lang-sql.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-sql.js"; sourceTree = "<group>"; };
+		C3FD934115E431C900954354 /* lang-tex.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-tex.js"; sourceTree = "<group>"; };
+		C3FD934215E431C900954354 /* lang-vb.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-vb.js"; sourceTree = "<group>"; };
+		C3FD934315E431C900954354 /* lang-vhdl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-vhdl.js"; sourceTree = "<group>"; };
+		C3FD934415E431C900954354 /* lang-wiki.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-wiki.js"; sourceTree = "<group>"; };
+		C3FD934515E431C900954354 /* lang-xq.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-xq.js"; sourceTree = "<group>"; };
+		C3FD934615E431C900954354 /* lang-yaml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-yaml.js"; sourceTree = "<group>"; };
+		C3FD934815E431C900954354 /* prettify.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = prettify.css; sourceTree = "<group>"; };
+		C3FD934915E431C900954354 /* prettify.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = prettify.js; sourceTree = "<group>"; };
+		C3FD935F15E431F900954354 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,9 +163,9 @@
 				C335C14815DEB4B1007526C7 /* MainStoryboard_iPhone.storyboard */,
 				C335C14B15DEB4B1007526C7 /* MainStoryboard_iPad.storyboard */,
 				C335C14E15DEB4B1007526C7 /* ViewController.h */,
-				C335C14F15DEB4B1007526C7 /* ViewController.m */,
+				C335C14F15DEB4B1007526C7 /* ViewController.mm */,
+				C3FD933315E4318900954354 /* Resources */,
 				C335C13D15DEB4B1007526C7 /* Supporting Files */,
-				C30955AC15E2560500FB9074 /* DataSource.plist */,
 				C3F8290315E29CDD0055B281 /* RegexProcessor.cpp */,
 				C3F8290415E29CDD0055B281 /* RegexProcessor.h */,
 			);
@@ -160,6 +200,43 @@
 				C335C16015DEB4B1007526C7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3FD933315E4318900954354 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C3FD933415E431C900954354 /* prettify */,
+				C3FD935F15E431F900954354 /* index.html */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C3FD933415E431C900954354 /* prettify */ = {
+			isa = PBXGroup;
+			children = (
+				C3FD933515E431C900954354 /* lang-apollo.js */,
+				C3FD933615E431C900954354 /* lang-clj.js */,
+				C3FD933715E431C900954354 /* lang-css.js */,
+				C3FD933815E431C900954354 /* lang-go.js */,
+				C3FD933915E431C900954354 /* lang-hs.js */,
+				C3FD933A15E431C900954354 /* lang-lisp.js */,
+				C3FD933B15E431C900954354 /* lang-lua.js */,
+				C3FD933C15E431C900954354 /* lang-ml.js */,
+				C3FD933D15E431C900954354 /* lang-n.js */,
+				C3FD933E15E431C900954354 /* lang-proto.js */,
+				C3FD933F15E431C900954354 /* lang-scala.js */,
+				C3FD934015E431C900954354 /* lang-sql.js */,
+				C3FD934115E431C900954354 /* lang-tex.js */,
+				C3FD934215E431C900954354 /* lang-vb.js */,
+				C3FD934315E431C900954354 /* lang-vhdl.js */,
+				C3FD934415E431C900954354 /* lang-wiki.js */,
+				C3FD934515E431C900954354 /* lang-xq.js */,
+				C3FD934615E431C900954354 /* lang-yaml.js */,
+				C3FD934815E431C900954354 /* prettify.css */,
+				C3FD934915E431C900954354 /* prettify.js */,
+			);
+			name = prettify;
+			path = ../../../../Documents/prettify;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +313,8 @@
 				C335C14115DEB4B1007526C7 /* InfoPlist.strings in Resources */,
 				C335C14A15DEB4B1007526C7 /* MainStoryboard_iPhone.storyboard in Resources */,
 				C335C14D15DEB4B1007526C7 /* MainStoryboard_iPad.storyboard in Resources */,
-				C30955AD15E2560500FB9074 /* DataSource.plist in Resources */,
+				C3FD935D15E431C900954354 /* prettify.css in Resources */,
+				C3FD936015E431F900954354 /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +351,27 @@
 			files = (
 				C335C14315DEB4B1007526C7 /* main.m in Sources */,
 				C335C14715DEB4B1007526C7 /* AppDelegate.m in Sources */,
-				C335C15015DEB4B1007526C7 /* ViewController.m in Sources */,
+				C335C15015DEB4B1007526C7 /* ViewController.mm in Sources */,
 				C3F8290515E29CDD0055B281 /* RegexProcessor.cpp in Sources */,
+				C3FD934A15E431C900954354 /* lang-apollo.js in Sources */,
+				C3FD934B15E431C900954354 /* lang-clj.js in Sources */,
+				C3FD934C15E431C900954354 /* lang-css.js in Sources */,
+				C3FD934D15E431C900954354 /* lang-go.js in Sources */,
+				C3FD934E15E431C900954354 /* lang-hs.js in Sources */,
+				C3FD934F15E431C900954354 /* lang-lisp.js in Sources */,
+				C3FD935015E431C900954354 /* lang-lua.js in Sources */,
+				C3FD935115E431C900954354 /* lang-ml.js in Sources */,
+				C3FD935215E431C900954354 /* lang-n.js in Sources */,
+				C3FD935315E431C900954354 /* lang-proto.js in Sources */,
+				C3FD935415E431C900954354 /* lang-scala.js in Sources */,
+				C3FD935515E431C900954354 /* lang-sql.js in Sources */,
+				C3FD935615E431C900954354 /* lang-tex.js in Sources */,
+				C3FD935715E431C900954354 /* lang-vb.js in Sources */,
+				C3FD935815E431C900954354 /* lang-vhdl.js in Sources */,
+				C3FD935915E431C900954354 /* lang-wiki.js in Sources */,
+				C3FD935A15E431C900954354 /* lang-xq.js in Sources */,
+				C3FD935B15E431C900954354 /* lang-yaml.js in Sources */,
+				C3FD935E15E431C900954354 /* prettify.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +452,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/usr/include/c++/v1";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -377,6 +475,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/usr/include/c++/v1";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;

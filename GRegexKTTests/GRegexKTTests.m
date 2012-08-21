@@ -7,6 +7,7 @@
 //
 
 #import "GRegexKTTests.h"
+#import "../GRegexKT/RegexProcessor.h"
 
 @implementation GRegexKTTests
 
@@ -26,6 +27,7 @@
 
 - (void)testExample
 {
+    RegexPocessor rp("");
     STFail(@"Unit tests are not implemented yet in GRegexKTTests");
 }
 

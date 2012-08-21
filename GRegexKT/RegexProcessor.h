@@ -10,17 +10,27 @@
 #define __GRegexKT__RegexProcessor__
 
 #include <iostream>
-#include <c++/v1/regex>
+#include <regex>
 
 class RegexProcessor {
 private:
     std::string stream;
-    std::regex pattern;
-    
+    std::regex  pattern;
+    std::string formatStream;
+    std::string htmlStream;
 protected:
-    static char* syntaxLib;
+    static const char* cssSpan;
+    static const char* cssStyle;
+    static const char* jsLib;
+    static const char* htmlWrap;
+    void wrapResults();
+    void assemble();
 public:
-    void load();
+    void loadStream(std::string str);
+    void setRegex(std::string re);
+    //void addJS(std::string js);
+    std::string getHtmlStream();
+    RegexProcessor(std::string str);
 };
 
 #endif /* defined(__GRegexKT__RegexProcessor__) */
