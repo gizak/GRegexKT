@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#include "RegexProcessor.h"
+#include "RegexProc.h"
 
 @interface ViewController ()
 
@@ -26,8 +26,9 @@
     //OTStoreSrc
 	// Do any additional setup after loading the view, typically from a nib.
     NSLog(@"load ViewController");
+    //RegexProc re;
     self.pickerContent=[[NSArray alloc] initWithObjects:@"default",@"In0",@"In1",@"In2",nil];
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"localhost/"]]];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://127.0.0.1"]]];
 
 }
 
@@ -66,11 +67,6 @@
 - (void)searchBarSearchButtonClicked:(UISearchBar *)srchBar{
     NSLog(@"call searchBarSearchButtonClicked");
     [srchBar endEditing:YES];
-    RegexProcessor rp("");
-    rp.getHtmlStream();
-    NSString *str=[NSString stringWithUTF8String:rp.getHtmlStream().c_str()];
-    NSLog(str);
-    [self.webView loadHTMLString:str baseURL:nil];
 }
 
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
@@ -93,8 +89,8 @@
     return YES;
 }
 
--(void)webViewDidStartLoad:(UIWebView *)webView{
-    NSLog(@"call webViewDidStartLoad ->%@",webView);
+-(void)webViewDidStartLoad:(UIWebView *)webV{
+    NSLog(@"call webViewDidStartLoad ->%@",webV);
 }
 
 @end

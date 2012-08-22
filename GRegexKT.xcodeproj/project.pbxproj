@@ -21,7 +21,7 @@
 		C335C15A15DEB4B1007526C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C335C13815DEB4B1007526C7 /* Foundation.framework */; };
 		C335C16215DEB4B1007526C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C335C16015DEB4B1007526C7 /* InfoPlist.strings */; };
 		C335C16515DEB4B1007526C7 /* GRegexKTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C335C16415DEB4B1007526C7 /* GRegexKTTests.m */; };
-		C3F8290515E29CDD0055B281 /* RegexProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3F8290315E29CDD0055B281 /* RegexProcessor.cpp */; };
+		C3F9B2D615E52E3C0057EF89 /* RegexProc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3F9B2D415E52E3C0057EF89 /* RegexProc.cpp */; };
 		C3FD934A15E431C900954354 /* lang-apollo.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933515E431C900954354 /* lang-apollo.js */; };
 		C3FD934B15E431C900954354 /* lang-clj.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933615E431C900954354 /* lang-clj.js */; };
 		C3FD934C15E431C900954354 /* lang-css.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933715E431C900954354 /* lang-css.js */; };
@@ -68,7 +68,7 @@
 		C335C14615DEB4B1007526C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C335C14915DEB4B1007526C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		C335C14C15DEB4B1007526C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		C335C14E15DEB4B1007526C7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C335C14E15DEB4B1007526C7 /* ViewController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C335C14F15DEB4B1007526C7 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		C335C15615DEB4B1007526C7 /* GRegexKTTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GRegexKTTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C335C15715DEB4B1007526C7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -76,8 +76,8 @@
 		C335C16115DEB4B1007526C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C335C16315DEB4B1007526C7 /* GRegexKTTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GRegexKTTests.h; sourceTree = "<group>"; };
 		C335C16415DEB4B1007526C7 /* GRegexKTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRegexKTTests.m; sourceTree = "<group>"; };
-		C3F8290315E29CDD0055B281 /* RegexProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RegexProcessor.cpp; sourceTree = "<group>"; };
-		C3F8290415E29CDD0055B281 /* RegexProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexProcessor.h; sourceTree = "<group>"; };
+		C3F9B2D415E52E3C0057EF89 /* RegexProc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RegexProc.cpp; sourceTree = "<group>"; };
+		C3F9B2D515E52E3C0057EF89 /* RegexProc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexProc.h; sourceTree = "<group>"; };
 		C3FD933515E431C900954354 /* lang-apollo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-apollo.js"; sourceTree = "<group>"; };
 		C3FD933615E431C900954354 /* lang-clj.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-clj.js"; sourceTree = "<group>"; };
 		C3FD933715E431C900954354 /* lang-css.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-css.js"; sourceTree = "<group>"; };
@@ -166,8 +166,6 @@
 				C335C14F15DEB4B1007526C7 /* ViewController.mm */,
 				C3FD933315E4318900954354 /* Resources */,
 				C335C13D15DEB4B1007526C7 /* Supporting Files */,
-				C3F8290315E29CDD0055B281 /* RegexProcessor.cpp */,
-				C3F8290415E29CDD0055B281 /* RegexProcessor.h */,
 			);
 			path = GRegexKT;
 			sourceTree = "<group>";
@@ -175,6 +173,8 @@
 		C335C13D15DEB4B1007526C7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3F9B2D415E52E3C0057EF89 /* RegexProc.cpp */,
+				C3F9B2D515E52E3C0057EF89 /* RegexProc.h */,
 				C335C13E15DEB4B1007526C7 /* GRegexKT-Info.plist */,
 				C335C13F15DEB4B1007526C7 /* InfoPlist.strings */,
 				C335C14215DEB4B1007526C7 /* main.m */,
@@ -352,7 +352,6 @@
 				C335C14315DEB4B1007526C7 /* main.m in Sources */,
 				C335C14715DEB4B1007526C7 /* AppDelegate.m in Sources */,
 				C335C15015DEB4B1007526C7 /* ViewController.mm in Sources */,
-				C3F8290515E29CDD0055B281 /* RegexProcessor.cpp in Sources */,
 				C3FD934A15E431C900954354 /* lang-apollo.js in Sources */,
 				C3FD934B15E431C900954354 /* lang-clj.js in Sources */,
 				C3FD934C15E431C900954354 /* lang-css.js in Sources */,
@@ -380,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C335C16515DEB4B1007526C7 /* GRegexKTTests.m in Sources */,
+				C3F9B2D615E52E3C0057EF89 /* RegexProc.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

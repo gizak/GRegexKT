@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (copy, nonatomic) NSString *userInput;
+//@property RegexProc *re;
 
 @property (strong,nonatomic) NSArray *pickerContent;
 - (IBAction)doSwitchFile:(id)sender;
