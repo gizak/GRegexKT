@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C319EA5915E5015900382550 /* lang-apollo.js in Resources */ = {isa = PBXBuildFile; fileRef = C3FD933515E431C900954354 /* lang-apollo.js */; };
+		C319EA5A15E5015900382550 /* lang-clj.js in Resources */ = {isa = PBXBuildFile; fileRef = C3FD933615E431C900954354 /* lang-clj.js */; };
+		C319EA5B15E5015900382550 /* lang-css.js in Resources */ = {isa = PBXBuildFile; fileRef = C3FD933715E431C900954354 /* lang-css.js */; };
+		C319EA5C15E5015900382550 /* lang-go.js in Resources */ = {isa = PBXBuildFile; fileRef = C3FD933815E431C900954354 /* lang-go.js */; };
+		C319EA5D15E5015900382550 /* lang-hs.js in Resources */ = {isa = PBXBuildFile; fileRef = C3FD933915E431C900954354 /* lang-hs.js */; };
+		C319EA5E15E5015900382550 /* lang-lisp.js in Resources */ = {isa = PBXBuildFile; fileRef = C3FD933A15E431C900954354 /* lang-lisp.js */; };
+		C319EA5F15E5015900382550 /* lang-lua.js in Resources */ = {isa = PBXBuildFile; fileRef = C3FD933B15E431C900954354 /* lang-lua.js */; };
+		C319EA6015E5015900382550 /* lang-ml.js in Resources */ = {isa = PBXBuildFile; fileRef = C3FD933C15E431C900954354 /* lang-ml.js */; };
+		C319EA6115E5015900382550 /* lang-n.js in Resources */ = {isa = PBXBuildFile; fileRef = C3FD933D15E431C900954354 /* lang-n.js */; };
+		C319EA6215E5015900382550 /* lang-proto.js in Resources */ = {isa = PBXBuildFile; fileRef = C3FD933E15E431C900954354 /* lang-proto.js */; };
+		C319EA6315E5015900382550 /* lang-scala.js in Resources */ = {isa = PBXBuildFile; fileRef = C3FD933F15E431C900954354 /* lang-scala.js */; };
+		C319EA6415E5015900382550 /* lang-sql.js in Resources */ = {isa = PBXBuildFile; fileRef = C3FD934015E431C900954354 /* lang-sql.js */; };
+		C319EA6515E5015900382550 /* lang-tex.js in Resources */ = {isa = PBXBuildFile; fileRef = C3FD934115E431C900954354 /* lang-tex.js */; };
+		C319EA6615E5015900382550 /* lang-vb.js in Resources */ = {isa = PBXBuildFile; fileRef = C3FD934215E431C900954354 /* lang-vb.js */; };
+		C319EA6715E5015900382550 /* lang-vhdl.js in Resources */ = {isa = PBXBuildFile; fileRef = C3FD934315E431C900954354 /* lang-vhdl.js */; };
+		C319EA6815E5015900382550 /* lang-wiki.js in Resources */ = {isa = PBXBuildFile; fileRef = C3FD934415E431C900954354 /* lang-wiki.js */; };
+		C319EA6915E5015900382550 /* lang-xq.js in Resources */ = {isa = PBXBuildFile; fileRef = C3FD934515E431C900954354 /* lang-xq.js */; };
+		C319EA6A15E5015900382550 /* lang-yaml.js in Resources */ = {isa = PBXBuildFile; fileRef = C3FD934615E431C900954354 /* lang-yaml.js */; };
+		C319EA6B15E5015900382550 /* prettify.js in Resources */ = {isa = PBXBuildFile; fileRef = C3FD934915E431C900954354 /* prettify.js */; };
+		C319EA7515E508D300382550 /* test.extjs.seg in Resources */ = {isa = PBXBuildFile; fileRef = C319EA7415E508D300382550 /* test.extjs.seg */; };
+		C319EA7615E50C1300382550 /* RegexProc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3F9B2D415E52E3C0057EF89 /* RegexProc.cpp */; };
 		C335C13715DEB4B1007526C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C335C13615DEB4B1007526C7 /* UIKit.framework */; };
 		C335C13915DEB4B1007526C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C335C13815DEB4B1007526C7 /* Foundation.framework */; };
 		C335C13B15DEB4B1007526C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C335C13A15DEB4B1007526C7 /* CoreGraphics.framework */; };
@@ -22,26 +43,7 @@
 		C335C16215DEB4B1007526C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C335C16015DEB4B1007526C7 /* InfoPlist.strings */; };
 		C335C16515DEB4B1007526C7 /* GRegexKTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C335C16415DEB4B1007526C7 /* GRegexKTTests.m */; };
 		C3F9B2D615E52E3C0057EF89 /* RegexProc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3F9B2D415E52E3C0057EF89 /* RegexProc.cpp */; };
-		C3FD934A15E431C900954354 /* lang-apollo.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933515E431C900954354 /* lang-apollo.js */; };
-		C3FD934B15E431C900954354 /* lang-clj.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933615E431C900954354 /* lang-clj.js */; };
-		C3FD934C15E431C900954354 /* lang-css.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933715E431C900954354 /* lang-css.js */; };
-		C3FD934D15E431C900954354 /* lang-go.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933815E431C900954354 /* lang-go.js */; };
-		C3FD934E15E431C900954354 /* lang-hs.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933915E431C900954354 /* lang-hs.js */; };
-		C3FD934F15E431C900954354 /* lang-lisp.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933A15E431C900954354 /* lang-lisp.js */; };
-		C3FD935015E431C900954354 /* lang-lua.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933B15E431C900954354 /* lang-lua.js */; };
-		C3FD935115E431C900954354 /* lang-ml.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933C15E431C900954354 /* lang-ml.js */; };
-		C3FD935215E431C900954354 /* lang-n.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933D15E431C900954354 /* lang-n.js */; };
-		C3FD935315E431C900954354 /* lang-proto.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933E15E431C900954354 /* lang-proto.js */; };
-		C3FD935415E431C900954354 /* lang-scala.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD933F15E431C900954354 /* lang-scala.js */; };
-		C3FD935515E431C900954354 /* lang-sql.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD934015E431C900954354 /* lang-sql.js */; };
-		C3FD935615E431C900954354 /* lang-tex.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD934115E431C900954354 /* lang-tex.js */; };
-		C3FD935715E431C900954354 /* lang-vb.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD934215E431C900954354 /* lang-vb.js */; };
-		C3FD935815E431C900954354 /* lang-vhdl.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD934315E431C900954354 /* lang-vhdl.js */; };
-		C3FD935915E431C900954354 /* lang-wiki.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD934415E431C900954354 /* lang-wiki.js */; };
-		C3FD935A15E431C900954354 /* lang-xq.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD934515E431C900954354 /* lang-xq.js */; };
-		C3FD935B15E431C900954354 /* lang-yaml.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD934615E431C900954354 /* lang-yaml.js */; };
 		C3FD935D15E431C900954354 /* prettify.css in Resources */ = {isa = PBXBuildFile; fileRef = C3FD934815E431C900954354 /* prettify.css */; };
-		C3FD935E15E431C900954354 /* prettify.js in Sources */ = {isa = PBXBuildFile; fileRef = C3FD934915E431C900954354 /* prettify.js */; };
 		C3FD936015E431F900954354 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = C3FD935F15E431F900954354 /* index.html */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C319EA7415E508D300382550 /* test.extjs.seg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.extjs.seg; sourceTree = "<group>"; };
 		C335C13215DEB4B1007526C7 /* GRegexKT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GRegexKT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C335C13615DEB4B1007526C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C335C13815DEB4B1007526C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,7 +101,7 @@
 		C3FD934615E431C900954354 /* lang-yaml.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "lang-yaml.js"; sourceTree = "<group>"; };
 		C3FD934815E431C900954354 /* prettify.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = prettify.css; sourceTree = "<group>"; };
 		C3FD934915E431C900954354 /* prettify.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = prettify.js; sourceTree = "<group>"; };
-		C3FD935F15E431F900954354 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		C3FD935F15E431F900954354 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = ../../Devtrap/Xcode/GRegexKT/GRegexKT/index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C319EA7115E5065E00382550 /* segment */ = {
+			isa = PBXGroup;
+			children = (
+				C319EA7415E508D300382550 /* test.extjs.seg */,
+			);
+			name = segment;
+			sourceTree = "<group>";
+		};
 		C335C12715DEB4B1007526C7 = {
 			isa = PBXGroup;
 			children = (
@@ -205,8 +216,8 @@
 		C3FD933315E4318900954354 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C319EA7115E5065E00382550 /* segment */,
 				C3FD933415E431C900954354 /* prettify */,
-				C3FD935F15E431F900954354 /* index.html */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -214,6 +225,7 @@
 		C3FD933415E431C900954354 /* prettify */ = {
 			isa = PBXGroup;
 			children = (
+				C3FD935F15E431F900954354 /* index.html */,
 				C3FD933515E431C900954354 /* lang-apollo.js */,
 				C3FD933615E431C900954354 /* lang-clj.js */,
 				C3FD933715E431C900954354 /* lang-css.js */,
@@ -310,11 +322,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C319EA5915E5015900382550 /* lang-apollo.js in Resources */,
+				C319EA5A15E5015900382550 /* lang-clj.js in Resources */,
+				C319EA5B15E5015900382550 /* lang-css.js in Resources */,
+				C319EA5C15E5015900382550 /* lang-go.js in Resources */,
+				C319EA5D15E5015900382550 /* lang-hs.js in Resources */,
+				C319EA5E15E5015900382550 /* lang-lisp.js in Resources */,
+				C319EA5F15E5015900382550 /* lang-lua.js in Resources */,
+				C319EA6015E5015900382550 /* lang-ml.js in Resources */,
+				C319EA6115E5015900382550 /* lang-n.js in Resources */,
+				C319EA6215E5015900382550 /* lang-proto.js in Resources */,
+				C319EA6315E5015900382550 /* lang-scala.js in Resources */,
+				C319EA6415E5015900382550 /* lang-sql.js in Resources */,
+				C319EA6515E5015900382550 /* lang-tex.js in Resources */,
+				C319EA6615E5015900382550 /* lang-vb.js in Resources */,
+				C319EA6715E5015900382550 /* lang-vhdl.js in Resources */,
+				C319EA6815E5015900382550 /* lang-wiki.js in Resources */,
+				C319EA6915E5015900382550 /* lang-xq.js in Resources */,
+				C319EA6A15E5015900382550 /* lang-yaml.js in Resources */,
+				C319EA6B15E5015900382550 /* prettify.js in Resources */,
 				C335C14115DEB4B1007526C7 /* InfoPlist.strings in Resources */,
 				C335C14A15DEB4B1007526C7 /* MainStoryboard_iPhone.storyboard in Resources */,
 				C335C14D15DEB4B1007526C7 /* MainStoryboard_iPad.storyboard in Resources */,
 				C3FD935D15E431C900954354 /* prettify.css in Resources */,
 				C3FD936015E431F900954354 /* index.html in Resources */,
+				C319EA7515E508D300382550 /* test.extjs.seg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,28 +381,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C319EA7615E50C1300382550 /* RegexProc.cpp in Sources */,
 				C335C14315DEB4B1007526C7 /* main.m in Sources */,
 				C335C14715DEB4B1007526C7 /* AppDelegate.m in Sources */,
 				C335C15015DEB4B1007526C7 /* ViewController.mm in Sources */,
-				C3FD934A15E431C900954354 /* lang-apollo.js in Sources */,
-				C3FD934B15E431C900954354 /* lang-clj.js in Sources */,
-				C3FD934C15E431C900954354 /* lang-css.js in Sources */,
-				C3FD934D15E431C900954354 /* lang-go.js in Sources */,
-				C3FD934E15E431C900954354 /* lang-hs.js in Sources */,
-				C3FD934F15E431C900954354 /* lang-lisp.js in Sources */,
-				C3FD935015E431C900954354 /* lang-lua.js in Sources */,
-				C3FD935115E431C900954354 /* lang-ml.js in Sources */,
-				C3FD935215E431C900954354 /* lang-n.js in Sources */,
-				C3FD935315E431C900954354 /* lang-proto.js in Sources */,
-				C3FD935415E431C900954354 /* lang-scala.js in Sources */,
-				C3FD935515E431C900954354 /* lang-sql.js in Sources */,
-				C3FD935615E431C900954354 /* lang-tex.js in Sources */,
-				C3FD935715E431C900954354 /* lang-vb.js in Sources */,
-				C3FD935815E431C900954354 /* lang-vhdl.js in Sources */,
-				C3FD935915E431C900954354 /* lang-wiki.js in Sources */,
-				C3FD935A15E431C900954354 /* lang-xq.js in Sources */,
-				C3FD935B15E431C900954354 /* lang-yaml.js in Sources */,
-				C3FD935E15E431C900954354 /* prettify.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

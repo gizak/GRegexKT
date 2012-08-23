@@ -1,0 +1,56 @@
+Ext.define('Acme.controller.OrderConfig',{
+	extend:'Ext.app.Controller',
+
+	views:['WndOrderConfig','TbOrder'],
+
+	init:function(){
+		console.log('Init OrderConfig Controller')
+
+		this.wnd=this.getView('WndOrderConfig').create()
+		this.btn_ref=null
+
+		this.control({
+			'fmorderconfig button[action=submit]':{
+				click:this.onSubmit
+			},
+			'tborder button[action=man]':{
+				click:this.onManualOrder
+			}
+			
+		})
+	},
+
+	onManualOrder:function(btn){
+		console.log('handle man btn')
+		this.btn_ref=btn
+		btn.disable()
+		if(this.wnd.isVisible())
+		{
+			this.wnd.hide(btn,function(){btn.enable()})
+		}
+		else 
+		{
+			this.wnd.down('form').getForm().reset()
+			this.wnd.show(btn,function(){btn.enable()})
+		}
+			
+	},
+	onSubmit:function(btn){
+		console.log('handle submit btn')
+		var form = this.wnd.down('form').getForm()
+		//console.log(this.wnd.down('#et').getValue())
+		if(form.isValid())
+		{
+			form.submit({
+				success:function(frm,act){console.log('submit success')},
+				failure:function(frm,act){console.log('submit failure')}
+			})
+			//Ext.Msg.alert('res','OK')
+		}
+		else{
+			Ext.Msg.alert('res','ERR')
+		}
+		//console.log(form)
+		this.wnd.hide(this.btn_ref)
+	}
+})

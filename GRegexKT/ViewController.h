@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#include "RegexProc.h"
 
 @interface ViewController : UIViewController<UISearchBarDelegate,UIPickerViewDelegate,UIPickerViewDataSource,UIWebViewDelegate>
 
@@ -15,9 +16,14 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (copy, nonatomic) NSString *userInput;
-//@property RegexProc *re;
-
 @property (strong,nonatomic) NSArray *pickerContent;
+@property (strong,nonatomic) NSString *htmlTemplate;
+@property (strong,nonatomic) NSString *textCurrentFile;
+@property (strong,nonatomic) NSURL *baseUri;
+@property (strong,nonatomic) NSString *fileName;
+@property RegexProc *re;
 - (IBAction)doSwitchFile:(id)sender;
-
+- (void)apply;
+- (NSString*)embedInTemplate:(NSString*)inner;
+- (void) loadSegFile:(NSString*)fn;
 @end

@@ -1,5 +1,4 @@
-//#pragma once
-//#include<string>
+#pragma once
 #include<regex>
 class RegexProc
 {
@@ -9,15 +8,15 @@ public:
 private:
 	std::string text;
 	std::string textFormat;
-public:
 	std::string input;
-private:
 	std::regex pattern;
 public:
 	virtual bool loadText(std::string str);
 	void wrap(std::string tag,std::string placeholder);
 	void setRegularExpression(std::string exp);//thr
 	void dump(void);
+    void flush(void);
+    size_t count(void);
 	virtual std::string getFormatText(void);
 };
 

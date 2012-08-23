@@ -39,9 +39,26 @@ std::string RegexProc::getFormatText(void)
 	return textFormat;
 }
 
+size_t RegexProc::count()
+{
+    size_t c=0;
+    auto end=std::sregex_token_iterator();
+    
+    for (auto it=std::sregex_token_iterator(text.begin(),text.end(),pattern); it!=end; ++it) {++c;}
+    return c;
+}
+
+void RegexProc::flush()
+{
+    textFormat.clear();
+    input.clear();
+    pattern.assign("");
+}
+
 void RegexProc::dump()
 {
-	std::cout<<"text : "<<text<<std::endl;
-	std::cout<<"format-text : "<<textFormat<<std::endl;
-	std::cout<<"regular-expression : "<<input<<std::endl;	
+    std::cout<<count()<<std::endl;
+	//std::cout<<"text : "<<text<<std::endl;
+	//std::cout<<"format-text : "<<textFormat<<std::endl;
+	//std::cout<<"regular-expression : "<<input<<std::endl;
 }

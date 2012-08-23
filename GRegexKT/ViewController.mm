@@ -7,13 +7,14 @@
 //
 
 #import "ViewController.h"
-#include "RegexProc.h"
+
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
 @synthesize searchBar;
 @synthesize barButton;
 @synthesize pickerView;
@@ -23,13 +24,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //OTStoreSrc
 	// Do any additional setup after loading the view, typically from a nib.
     NSLog(@"load ViewController");
-    //RegexProc re;
+    self.re=new RegexProc();
+    
     self.pickerContent=[[NSArray alloc] initWithObjects:@"default",@"In0",@"In1",@"In2",nil];
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://127.0.0.1"]]];
+    
+    //[NSURL URLWithString:@"http://127.0.0.1"]
+    NSURL *uri=[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"] isDirectory:NO];
+    
+    self.htmlTemplate=[NSString stringWithContentsOfURL:uri encoding:NSUTF8StringEncoding error:nil];
+    self.baseUri=[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]];
 
+    //NSLog(@"load ->%@",newHtml);
+    [self loadSegFile:@"test.extjs"];
+    [self.webView loadHTMLString:[self embedInTemplate:self.textCurrentFile] baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
 }
 
 - (void)viewDidUnload
@@ -61,11 +70,19 @@
     NSLog(@"call searchBarShouldEndEditing");
     return YES;
 }
-- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar{
+- (void)searchBarTextDidEndEditing:(UISearchBar *)srchBar{
     NSLog(@"call searchBarTextDidEndEditing");
+    self.userInput=srchBar.text;
 }
 - (void)searchBarSearchButtonClicked:(UISearchBar *)srchBar{
-    NSLog(@"call searchBarSearchButtonClicked");
+    NSLog(@"call searchBarSearchButtonClicked ->%@",srchBar.text);
+    self.userInput=srchBar.text;
+    [self apply];
+    [srchBar endEditing:YES];
+}
+
+-(void)searchBarCancelButtonClicked:(UISearchBar *)srchBar{
+    srchBar.text=self.userInput;
     [srchBar endEditing:YES];
 }
 
@@ -93,4 +110,26 @@
     NSLog(@"call webViewDidStartLoad ->%@",webV);
 }
 
+-(void)apply{
+    NSLog(@"input -> %s",self.userInput.UTF8String);
+    self.re->setRegularExpression(self.userInput.UTF8String);
+    self.re->loadText(self.textCurrentFile.UTF8String);
+    self.re->wrap("<span class=\"re\">$0</span>","$0");
+    self.re->dump();
+    NSString *ns=[self embedInTemplate:[[NSString alloc] initWithUTF8String:self.re->getFormatText().c_str()]];
+    [self.webView loadHTMLString:ns baseURL:self.baseUri];
+}
+
+-(NSString *)embedInTemplate:(NSString *)inner{
+    self.re->loadText(inner.UTF8String);
+    self.re->setRegularExpression("[\\s\\S]*");
+    self.re->wrap(self.htmlTemplate.UTF8String,"$0");
+    return [[NSString alloc] initWithUTF8String:self.re->getFormatText().c_str()];
+}
+
+-(void)loadSegFile:(NSString *)fn{
+    self.fileName=fn;
+    NSURL *uriSeg=[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:fn ofType:@"seg"] isDirectory:NO];
+    self.textCurrentFile=[NSString stringWithContentsOfURL:uriSeg encoding:NSUTF8StringEncoding error:nil];
+}
 @end
